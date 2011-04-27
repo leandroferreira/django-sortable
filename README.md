@@ -4,13 +4,15 @@
 
 Using `pip`:
 
-    pip install -e git://github.com/ff0000/sortable.git#egg=sortable
+    pip install sortable
 
 Using `git`:
 
-    git clone git://github.com/ff0000/sortable.git
+    git clone git://github.com/ff0000/django-sortable.git
+    cd django-sortable
+    python setup.py install
 
-or download the package from [github.com/ff0000/sortable](https://github.com/ff0000/sortable).
+or download the package from [github.com/ff0000/sortable](https://github.com/ff0000/django-sortable).
 
 ## Installation
 
@@ -23,7 +25,7 @@ Open `settings.py` and add `sortable` to your `INSTALLED_APPS`:
 
 Copy the reorder Javascript the `static/js` folder:
 
-    cp [sortable folder]/sortable/static/js/admin_list_reorder.js [django-app]/static/js/
+    cp [sortable folder]/sortable/static/js/django-admin-sortable.js [django-app]/static/js/
 
 ## Reordering instances of a model with drag-and-drop in the admin
 
