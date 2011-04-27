@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='sortable',
-    version='0.1',
+    version='0.1.1',
     description='An app to add drag-and-drop to Grappelli admin to reorder instances of models.',
     author='Red Interactive Agency',
     author_email='geeks@ff0000.com',
