@@ -1,6 +1,7 @@
 from django.db import models
+from sortable.models import Sortable
 
-class Book(models.Model):
+class Book(Sortable):
     """(Book description)"""
     title = models.CharField(blank=True, max_length=100)
     author = models.CharField(blank=True, max_length=100)
