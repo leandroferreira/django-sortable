@@ -1,0 +1,19 @@
+#app_books, #app_red_stream, #app_auth, #app_books, #app_movies,
+#app_sites, #app_tvshows, #app_press, #app_stageplays, #app_subscribers, #app_journal, #app_messages {
+    padding: 4px 0px 4px 34px;
+    background-position: 6px center;
+    background-repeat: no-repeat;
+}
+
+#app_books {background-image: url('../img/glyphish/books.png')}
+#app_red_stream {background-image: url('../img/glyphish/red_stream.png')}
+#app_auth {background-image: url('../img/glyphish/auth.png')}
+#app_books {background-image: url('../img/glyphish/books.png'); background-position: 9px center;}
+#app_movies {background-image: url('../img/glyphish/movies.png'); background-position: 9px center;}
+#app_sites {background-image: url('../img/glyphish/sites.png')}
+#app_tvshows {background-image: url('../img/glyphish/tvshows.png')}
+#app_press {background-image: url('../img/glyphish/articles.png'); background-position: 8px center;}
+#app_stageplays {background-image: url('../img/glyphish/stageplays.png')}
+#app_subscribers {background-image: url('../img/glyphish/subscribers.png')}
+#app_journal {background-image: url('../img/glyphish/posts.png')}
+#app_messages {background-image: url('../img/glyphish/messages.png')}
