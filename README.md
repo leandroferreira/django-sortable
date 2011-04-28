@@ -12,7 +12,7 @@ Using `git`:
     cd django-sortable
     python setup.py install
 
-or download the package from [github.com/ff0000/sortable](https://github.com/ff0000/django-sortable).
+or download the package from [github.com/ff0000/django-sortable](https://github.com/ff0000/django-sortable).
 
 ## Installation
 
