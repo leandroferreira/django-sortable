@@ -8,6 +8,7 @@ from books.models import Book
 admin.autodiscover()
 urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
+    (r'^grappelli/', include('grappelli.urls')),
     (r'^$', ListView.as_view(model=Book), {}, 'books'),
 )
 

@@ -52,11 +52,6 @@ MEDIA_ROOT = ''
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
 MEDIA_URL = ''
 
-# URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
-# trailing slash.
-# Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
-
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'hw2!^6g9!f7=_!mnnf&#qvt#84+h*_hlbm$))ggsbl+dp8_s%!'
 
@@ -92,11 +87,15 @@ MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'uploads/')
 MEDIA_URL = '/uploads/' 
 
 # Additional locations the staticfiles app will traverse
-STATICFILES_DIRS = (os.path.join(os.path.dirname(__file__), 'static'),)
+STATICFILES_DIRS = (os.path.join(os.path.abspath(os.path.dirname(__file__)), 'static'),)
 
 # URL to use when referring to static files located in STATIC_ROOT
 STATIC_URL = '/static/'
 
+# URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
+# trailing slash.
+# Examples: "http://foo.com/media/", "/media/".
+ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -104,6 +103,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'grappelli',
     'django.contrib.admin',
     'books',
 )
