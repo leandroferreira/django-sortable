@@ -23,10 +23,6 @@ Open `settings.py` and add `sortable` to your `INSTALLED_APPS`:
       'sortable',
     )
 
-Copy the reorder Javascript the `static/js` folder:
-
-    cp [sortable folder]/sortable/static/js/django-admin-sortable.js [django-app]/static/js/
-
 ## Reordering instances of a model with drag-and-drop in the admin
 
 To add the sortable feature a model called `Article` do the following:
