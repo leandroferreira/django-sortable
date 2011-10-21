@@ -23,16 +23,16 @@
     
         // Determine the column number of the position field
         pos_col = null;
-        cols = $(table).find('tbody tr:first').children()
+        cols = $(table).find('tbody tr:first').children();
         for (i = 0; i < cols.length; i++) {
-            inputs = $(cols[i]).find('input[name*=' + pos_field + ']')
+            inputs = $(cols[i]).find('input[name*=' + pos_field + ']');
             if (inputs.length > 0) {pos_col = i; break;}} // Found
-        if (pos_col == null) return;                      // Not found
+        if (pos_col === null) return;                      // Not found
             
         // Some visual enhancements
-        header = $(table).find('thead tr').children()[pos_col]
-        $(header).css('width', '1em')
-        $(header).children('a').text('#')
+        header = $(table).find('thead tr').children()[pos_col];
+        $(header).css('width', '1em');
+        $(header).children('a').text('#');
     
         // Hide position field
         $(table).find('tbody tr').each(function(index) {
