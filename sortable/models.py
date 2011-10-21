@@ -3,7 +3,7 @@ from django.db import models
 
 class Sortable(models.Model):
     # Make instances reorderable
-    position = models.IntegerField(default=0)
+    position = models.PositiveSmallIntegerField()
 
     def save(self, *args, **kwargs):
         model = self.__class__
