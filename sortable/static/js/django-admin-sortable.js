@@ -59,7 +59,6 @@
     
         // Make tbody > tr sortable
         $(table).find('tbody').sortable({
-            axis: 'y',
             items: 'tr',
             cursor: 'move',
             update: function(event, ui) {
