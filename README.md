@@ -8,11 +8,11 @@ Using `pip`:
 
 Using `git`:
 
-    git clone git://github.com/ff0000/django-sortable.git
+    git clone git://github.com/leandroferreira/django-sortable.git
     cd django-sortable
     python setup.py install
 
-or download the package from [github.com/ff0000/django-sortable](https://github.com/ff0000/django-sortable).
+or download the package from [github.com/leandroferreira/django-sortable](https://github.com/leandroferreira/django-sortable).
 
 ## Installation
 
